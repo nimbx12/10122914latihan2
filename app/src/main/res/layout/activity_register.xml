@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--27 April 2023, 10122914, Dwi Nurcahyo, AKB IF10-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/header_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="16dp"
+            android:padding="10dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:background="@drawable/ic_header"
+            android:drawableLeft="@drawable/ic_header_back"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/header_register"
+            android:hint="Username"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/username"
+            android:hint="Email"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/HP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/email"
+            android:hint="Phone Number"
+            android:textColorHint="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/genderM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HP"
+            android:layout_marginLeft="32dp"
+            android:text="Male"
+            android:textColor="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/genderF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/HP"
+            android:layout_marginLeft="240dp"
+            android:text="Female"
+            android:textColor="@color/grey" />
+
+        <Spinner
+            android:id="@+id/gol_darah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderF"
+            android:layout_marginLeft="16dp"
+            android:entries="@array/gol_darah"
+            />
+
+        <Spinner
+            android:id="@+id/reshus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genderM"
+            android:layout_marginLeft="240dp"
+            android:entries="@array/reshus"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/gol_darah"
+            android:hint="Password"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/re_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/password"
+            android:hint="Retype Password"
+            android:textColorHint="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_password"
+            android:layout_marginLeft="32dp"
+            android:text="Personal"
+            android:textColor="@color/grey" />
+
+        <RadioButton
+            android:id="@+id/organization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_password"
+            android:layout_marginLeft="240dp"
+            android:text="Organization"
+            android:textColor="@color/grey" />
+
+        <Spinner
+            android:id="@+id/job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:entries="@array/job"
+            />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/job"
+            android:hint="Home Address"
+            android:textColorHint="@color/grey" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/address"
+            android:hint="Default Location"
+            android:drawableRight="@drawable/ic_blood_needed_location"
+            android:textColorHint="@color/grey" />
+
+        <CheckBox
+            android:id="@+id/condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/location"
+            android:text="Agree With Term and Conditions"
+            android:textColor="@color/grey"/>
+
+        <Button
+            android:id="@id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/button_2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/condition"
+            android:text="REGISTER"
+            android:onClick="REGISTER"
+            android:textColor="@color/light_blue"/>
+
+    </RelativeLayout>
+</ScrollView>

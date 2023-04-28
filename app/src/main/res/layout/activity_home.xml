@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--27 April 2023, 10122914, Dwi Nurcahyo, AKB IF10-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/bg_home"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_header_profile"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/side_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_side_menu"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notification"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="16dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Dwi Nurcahyo"
+        android:textSize="24dp"
+        android:textColor="@color/light_blue"
+        android:layout_below="@id/profile"/>
+
+    <TextView
+        android:id="@+id/darah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Blood Type : B"
+        android:textSize="18dp"
+        android:textColor="@color/grey"
+        android:layout_below="@id/nama"/>
+
+    <TextView
+        android:id="@+id/b_give_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/light_blue"
+        android:layout_below="@id/darah"
+        android:text="75"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/b_receive_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/darah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="100"
+        android:textColor="@color/light_blue"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/thanks_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="310dp"
+        android:textColor="@color/light_blue"
+        android:layout_below="@id/darah"
+        android:text="330"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/b_give_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/grey"
+        android:layout_below="@id/b_give_1"
+        android:text="BLOOD GIVE"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/b_receive_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_receive_1"
+        android:layout_centerHorizontal="true"
+        android:text="BLOOD RECEIVE"
+        android:textColor="@color/grey"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/thanks_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="316dp"
+        android:textColor="@color/grey"
+        android:layout_below="@id/thanks_1"
+        android:text="THANKS"
+        android:textSize="10dp"/>
+
+    <ImageView
+        android:id="@+id/cari_donor"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/b_give_2"
+        android:src="@drawable/ic_search_donor"/>
+
+    <TextView
+        android:id="@+id/t_cari_donor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Search Donor"
+        android:textColor="@color/hitam"
+        android:layout_below="@id/cari_donor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/t_cari_donor_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:text="Search donor near you"
+        android:textColor="@color/grey"
+        android:layout_below="@id/t_cari_donor"
+        android:textSize="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/blood_needed"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/b_give_2"
+        android:src="@drawable/ic_blood_needed"/>
+
+    <TextView
+        android:id="@+id/t_blood_needed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:text="Blood Needed"
+        android:textColor="@color/hitam"
+        android:layout_below="@id/blood_needed"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/t_blood_needed_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="276dp"
+        android:text="4 User need blood"
+        android:textColor="@color/grey"
+        android:layout_below="@id/t_blood_needed"
+        android:textSize="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/pesan"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/t_cari_donor_2"
+        android:src="@drawable/ic_message"/>
+
+    <TextView
+        android:id="@+id/t_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:text="Message"
+        android:textColor="@color/hitam"
+        android:layout_below="@id/pesan"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/t_pesan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="5 New Message"
+        android:textColor="@color/grey"
+        android:layout_below="@id/t_pesan"
+        android:textSize="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/donor_history"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/t_blood_needed_2"
+        android:src="@drawable/ic_donor_history"/>
+
+    <TextView
+        android:id="@+id/t_donor_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:text="Donor History"
+        android:textColor="@color/hitam"
+        android:layout_below="@id/donor_history"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/t_donor_history2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="272dp"
+        android:text="5 Gives, 2 Received"
+        android:textColor="@color/grey"
+        android:layout_below="@id/t_donor_history"
+        android:textSize="10dp"
+        />
+
+</RelativeLayout>
